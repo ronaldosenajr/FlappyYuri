@@ -24,8 +24,3 @@ func _on_Player_scored():
 	$HUD/Label.text = str(score)
 	pass # Replace with function body.
 
-
-func _on_Floor_body_entered(body):
-	if body.name == "Player":
-		body.queue_free()
-		get_tree().reload_current_scene()
